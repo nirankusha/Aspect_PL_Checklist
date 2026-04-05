@@ -1,0 +1,709 @@
+[
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_break_trans",
+    "predicate": "break.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["John", "broke", "the", "glass", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_break_unacc",
+    "predicate": "break.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "glass", "broke", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_open_trans",
+    "predicate": "open.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["Mary", "opened", "the", "door", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_open_unacc",
+    "predicate": "open.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "door", "opened", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_melt_trans",
+    "predicate": "melt.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["Heat", "melted", "the", "ice", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_melt_unacc",
+    "predicate": "melt.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "ice", "melted", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_freeze_trans",
+    "predicate": "freeze.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["Cold", "froze", "the", "lake", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_freeze_unacc",
+    "predicate": "freeze.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "lake", "froze", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_shatter_trans",
+    "predicate": "shatter.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["The", "blast", "shattered", "the", "window", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T1_causative_alternation",
+    "id": "t1_shatter_unacc",
+    "predicate": "shatter.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "window", "shattered", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_bloom_intrans",
+    "predicate": "bloom.01",
+    "variant": "internal_valid_intransitive",
+    "expected_valid": true,
+    "tokens": ["The", "cactus", "bloomed", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_bloom_trans",
+    "predicate": "bloom.01",
+    "variant": "internal_invalid_transitive",
+    "expected_valid": false,
+    "tokens": ["John", "bloomed", "the", "cactus", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_decay_intrans",
+    "predicate": "decay.01",
+    "variant": "internal_valid_intransitive",
+    "expected_valid": true,
+    "tokens": ["The", "wood", "decayed", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_decay_trans",
+    "predicate": "decay.01",
+    "variant": "internal_invalid_transitive",
+    "expected_valid": false,
+    "tokens": ["Rain", "decayed", "the", "wood", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_rot_intrans",
+    "predicate": "rot.01",
+    "variant": "internal_valid_intransitive",
+    "expected_valid": true,
+    "tokens": ["The", "fruit", "rotted", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_rot_trans",
+    "predicate": "rot.01",
+    "variant": "internal_invalid_transitive",
+    "expected_valid": false,
+    "tokens": ["Heat", "rotted", "the", "fruit", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_break_trans",
+    "predicate": "break.01",
+    "variant": "external_valid_transitive",
+    "expected_valid": true,
+    "tokens": ["John", "broke", "the", "glass", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_break_unacc",
+    "predicate": "break.01",
+    "variant": "external_valid_unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "glass", "broke", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_open_trans",
+    "predicate": "open.01",
+    "variant": "external_valid_transitive",
+    "expected_valid": true,
+    "tokens": ["Mary", "opened", "the", "door", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T2_alternation_licensing",
+    "id": "t2_open_unacc",
+    "predicate": "open.01",
+    "variant": "external_valid_unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "door", "opened", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+
+  {
+    "family": "T3_internal_vs_external_causation",
+    "id": "t3_melt",
+    "predicate": "melt.01",
+    "variant": "external",
+    "expected_valid": true,
+    "tokens": ["The", "sun", "melted", "the", "ice", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T3_internal_vs_external_causation",
+    "id": "t3_cool",
+    "predicate": "cool.01",
+    "variant": "external",
+    "expected_valid": true,
+    "tokens": ["The", "wind", "cooled", "the", "metal", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T3_internal_vs_external_causation",
+    "id": "t3_grow",
+    "predicate": "grow.01",
+    "variant": "internal",
+    "expected_valid": true,
+    "tokens": ["The", "child", "grew", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T3_internal_vs_external_causation",
+    "id": "t3_blossom",
+    "predicate": "blossom.01",
+    "variant": "internal",
+    "expected_valid": true,
+    "tokens": ["The", "flowers", "blossomed", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T3_internal_vs_external_causation",
+    "id": "t3_deteriorate",
+    "predicate": "deteriorate.01",
+    "variant": "internal",
+    "expected_valid": true,
+    "tokens": ["The", "structure", "deteriorated", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_shake",
+    "predicate": "shake.01",
+    "variant": "external_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "wind", "shook", "the", "building", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_shudder",
+    "predicate": "shudder.01",
+    "variant": "internal_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "building", "shuddered", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_melt",
+    "predicate": "melt.01",
+    "variant": "external_neighbor",
+    "expected_valid": true,
+    "tokens": ["Heat", "melted", "the", "wax", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_dissolve",
+    "predicate": "dissolve.01",
+    "variant": "internal_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "wax", "dissolved", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_open",
+    "predicate": "open.01",
+    "variant": "alternating_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "door", "opened", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_appear",
+    "predicate": "appear.01",
+    "variant": "appearance_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "figure", "appeared", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_break",
+    "predicate": "break.01",
+    "variant": "alternating_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "blast", "broke", "the", "glass", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_crackle",
+    "predicate": "crackle.01",
+    "variant": "manner_neighbor",
+    "expected_valid": true,
+    "tokens": ["The", "fire", "crackled", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_freeze",
+    "predicate": "freeze.01",
+    "variant": "alternating_neighbor",
+    "expected_valid": true,
+    "tokens": ["Cold", "froze", "the", "wax", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T4_near_synonym_contrast",
+    "id": "t4_stiffen",
+    "predicate": "stiffen.01",
+    "variant": "internal_neighbor",
+    "expected_valid": true,
+    "tokens": ["His", "muscles", "stiffened", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_break_passive",
+    "predicate": "break.01",
+    "variant": "passive",
+    "expected_valid": true,
+    "tokens": ["The", "window", "was", "broken", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_break_unacc",
+    "predicate": "break.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "window", "broke", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_sink_passive",
+    "predicate": "sink.01",
+    "variant": "passive",
+    "expected_valid": true,
+    "tokens": ["The", "ship", "was", "sunk", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_sink_unacc",
+    "predicate": "sink.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "ship", "sank", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_open_passive",
+    "predicate": "open.01",
+    "variant": "passive",
+    "expected_valid": true,
+    "tokens": ["The", "door", "was", "opened", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_open_unacc",
+    "predicate": "open.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "door", "opened", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_close_passive",
+    "predicate": "close.01",
+    "variant": "passive",
+    "expected_valid": true,
+    "tokens": ["The", "gate", "was", "closed", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_close_unacc",
+    "predicate": "close.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "gate", "closed", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_melt_passive",
+    "predicate": "melt.01",
+    "variant": "passive",
+    "expected_valid": true,
+    "tokens": ["The", "ice", "was", "melted", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "_"]
+  },
+  {
+    "family": "T5_passive_vs_unaccusative",
+    "id": "t5_melt_unacc",
+    "predicate": "melt.01",
+    "variant": "unaccusative",
+    "expected_valid": true,
+    "tokens": ["The", "ice", "melted", "."],
+    "predicate_onehot": [0, 0, 1, 0],
+    "gold": ["ARG1", "ARG1", "_", "_"]
+  },
+
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_break_passive",
+    "predicate": "break.01",
+    "variant": "passive_byphrase",
+    "expected_valid": true,
+    "tokens": ["The", "window", "was", "broken", "by", "John", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARG0", "ARG0", "_"]
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_break_unacc",
+    "predicate": "break.01",
+    "variant": "unaccusative_byphrase",
+    "expected_valid": false,
+    "tokens": ["The", "window", "broke", "by", "John", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_sink_passive",
+    "predicate": "sink.01",
+    "variant": "passive_byphrase",
+    "expected_valid": true,
+    "tokens": ["The", "ship", "was", "sunk", "by", "Bill", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARG0", "ARG0", "_"]
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_sink_unacc",
+    "predicate": "sink.01",
+    "variant": "unaccusative_byphrase",
+    "expected_valid": false,
+    "tokens": ["The", "ship", "sank", "by", "Bill", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_open_passive",
+    "predicate": "open.01",
+    "variant": "passive_byphrase",
+    "expected_valid": true,
+    "tokens": ["The", "door", "was", "opened", "by", "Mary", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARG0", "ARG0", "_"]
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_open_unacc",
+    "predicate": "open.01",
+    "variant": "unaccusative_byphrase",
+    "expected_valid": false,
+    "tokens": ["The", "door", "opened", "by", "Mary", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_shatter_passive",
+    "predicate": "shatter.01",
+    "variant": "passive_byphrase",
+    "expected_valid": true,
+    "tokens": ["The", "glass", "was", "shattered", "by", "the", "blast", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARG0", "ARG0", "ARG0", "_"]
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_shatter_unacc",
+    "predicate": "shatter.01",
+    "variant": "unaccusative_byphrase",
+    "expected_valid": false,
+    "tokens": ["The", "glass", "shattered", "by", "the", "blast", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_close_passive",
+    "predicate": "close.01",
+    "variant": "passive_byphrase",
+    "expected_valid": true,
+    "tokens": ["The", "gate", "was", "closed", "by", "the", "guard", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARG0", "ARG0", "ARG0", "_"]
+  },
+  {
+    "family": "T6_by_phrase_licensing",
+    "id": "t6_close_unacc",
+    "predicate": "close.01",
+    "variant": "unaccusative_byphrase",
+    "expected_valid": false,
+    "tokens": ["The", "gate", "closed", "by", "the", "guard", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0],
+    "gold": null
+  },
+
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_break_passive",
+    "predicate": "break.01",
+    "variant": "passive_purpose",
+    "expected_valid": true,
+    "tokens": ["The", "window", "was", "broken", "to", "rescue", "the", "child", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "_"]
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_break_unacc",
+    "predicate": "break.01",
+    "variant": "unaccusative_purpose",
+    "expected_valid": false,
+    "tokens": ["The", "window", "broke", "to", "rescue", "the", "child", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_sink_passive",
+    "predicate": "sink.01",
+    "variant": "passive_purpose",
+    "expected_valid": true,
+    "tokens": ["The", "boat", "was", "sunk", "to", "collect", "the", "insurance", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "_"]
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_sink_unacc",
+    "predicate": "sink.01",
+    "variant": "unaccusative_purpose",
+    "expected_valid": false,
+    "tokens": ["The", "boat", "sank", "to", "collect", "the", "insurance", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_open_passive",
+    "predicate": "open.01",
+    "variant": "passive_purpose",
+    "expected_valid": true,
+    "tokens": ["The", "door", "was", "opened", "to", "let", "in", "the", "crowd", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "_"]
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_open_unacc",
+    "predicate": "open.01",
+    "variant": "unaccusative_purpose",
+    "expected_valid": false,
+    "tokens": ["The", "door", "opened", "to", "let", "in", "the", "crowd", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_destroy_passive",
+    "predicate": "destroy.01",
+    "variant": "passive_purpose",
+    "expected_valid": true,
+    "tokens": ["The", "files", "were", "destroyed", "to", "hide", "the", "evidence", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "_"]
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_destroy_unacc",
+    "predicate": "destroy.01",
+    "variant": "unaccusative_purpose",
+    "expected_valid": false,
+    "tokens": ["The", "files", "destroyed", "to", "hide", "the", "evidence", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": null
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_melt_passive",
+    "predicate": "melt.01",
+    "variant": "passive_purpose",
+    "expected_valid": true,
+    "tokens": ["The", "ice", "was", "melted", "to", "free", "the", "pipe", "."],
+    "predicate_onehot": [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": ["ARG1", "ARG1", "_", "_", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "ARGM-PNC", "_"]
+  },
+  {
+    "family": "T7_purpose_clause_control",
+    "id": "t7_melt_unacc",
+    "predicate": "melt.01",
+    "variant": "unaccusative_purpose",
+    "expected_valid": false,
+    "tokens": ["The", "ice", "melted", "to", "free", "the", "pipe", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0, 0, 0],
+    "gold": null
+  },
+
+  {
+    "family": "T8_morphological_causatives",
+    "id": "t8_modernize",
+    "predicate": "modernize.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["They", "modernized", "the", "system", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T8_morphological_causatives",
+    "id": "t8_stabilize",
+    "predicate": "stabilize.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["The", "process", "stabilized", "the", "structure", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T8_morphological_causatives",
+    "id": "t8_solidify",
+    "predicate": "solidify.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["The", "cold", "solidified", "the", "wax", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T8_morphological_causatives",
+    "id": "t8_liquify",
+    "predicate": "liquify.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["The", "heat", "liquified", "the", "metal", "."],
+    "predicate_onehot": [0, 0, 1, 0, 0, 0],
+    "gold": ["ARG0", "ARG0", "_", "ARG1", "ARG1", "_"]
+  },
+  {
+    "family": "T8_morphological_causatives",
+    "id": "t8_digitize",
+    "predicate": "digitize.01",
+    "variant": "transitive",
+    "expected_valid": true,
+    "tokens": ["They", "digitized", "the", "archive", "."],
+    "predicate_onehot": [0, 1, 0, 0, 0],
+    "gold": ["ARG0", "_", "ARG1", "ARG1", "_"]
+  }
+]
